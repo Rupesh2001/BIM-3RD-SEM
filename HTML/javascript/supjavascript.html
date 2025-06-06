@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image</title>
+	<script>
+		function convert()
+		{
+			a=document.getElementById('value').value;
+			str=a.fontcolor();
+			document.getElementById('display').innerHTML=str;
+		}
+	</script>
+	
+</head>
+<body>
+	<input type="txt" name="txtname" id="value">
+	<input type="button" name="btnclick" value="fontcolor" onclick='convert()'/>
+	<p id="display"></p>
+</body>
+</html>

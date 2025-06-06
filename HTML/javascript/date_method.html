@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>methods</title>
+	</head>
+	<script>
+	function time()
+		{
+			alert("this is timeout");
+		}
+		
+	function timeout()
+	{
+		
+		setTimeout(time,1000);
+	}
+	//date object
+	function display_clock()
+	{
+		c=setInterval(clock,1000);
+	}
+	var d=new Date();
+	function clock()
+	{
+		d=new Date();
+		t=d.toLocaleTimeString();
+		document.getElementById("output").innerHTML=t;
+	}
+	var clr;
+	function stop()
+	{
+		clearInterval(c);
+	}
+	function month()
+	{
+		document.getElementById("output").innerHTML=d.getMonth();
+	}
+	function second()
+	{
+		document.getElementById("output").innerHTML=d.getSeconds();
+	}
+	function full_year()
+	{
+		document.getElementById("output").innerHTML=d.getFullYear();
+	}
+	function day()
+	{
+		document.getElementById("output").innerHTML=d.getDay();
+	}
+	
+	var a=setInterval(promp,2000);
+	function promp()
+	{
+		p=prompt("enter your name");
+		if (p.length>3)
+		{
+			if (isNaN(p))
+			{
+				confirm("Welcome "+p);//same as alert but also have cancel button
+				clearInterval(a);
+			}
+		}
+	}
+	</script>
+	<body>	
+		<h1 id="output"></h1>
+		<input type="button" onclick="display_clock()" value="clock"/>
+		<input type="button" onclick="stop()" value="stop_clock"/>
+		<input type="button" onclick="month()" value="month"/>
+		<input type="button" onclick="second()" value="second"/>
+		<input type="button" onclick="full_year()" value="full_year"/>
+		<input type="button" onclick="day()" value="day"/>
+		
+		<input type="button" onclick="timeout()" value="timeout"/>
+	</body>
+</html>

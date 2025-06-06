@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+		<script>
+			function display(){	
+				a=document.getElementsByTagName("aname")[0].value;
+				b=document.getElementsByTagName("bname")[0].value;
+				c=document.getElementsByTagName("cname")[0].value;
+				if (a>b && a>c)
+					g=a;
+				else if (b>a && b>c)
+					g=b;
+				else	
+					g=c;
+				document.getElementById("one").innerHTML=g;
+				
+			}
+		</script>
+		<h3>To find greatest string among 3</h3>
+		<h1 id="one"></h1>
+			text1:<input type="text" name="aname"/>
+			text2:<input type="text" name="bname"/>
+			text3:<input type="text" name="cname"/>
+		<button onclick="display()" accesskey="z">click</button>
+	</body>
+</html>

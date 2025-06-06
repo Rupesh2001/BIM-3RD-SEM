@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Data_object</title>
+		<script>
+			function display()
+			{
+				b=new Date('march 7 2000');
+				c=new Date();
+				a=c-b;
+				year=a/(86400000*365);
+				a=a-(year*356*86400000);
+				month=a/(30*86400000);
+				a=a-(month*30*86400000);
+				day=a/86400000;
+				document.getElementById("output").innerHTML=""parseInt(year)+"year" ;
+				document.getElementById("output").innerHTML+=" "+parseInt(month)+"month" ;
+				document.getElementById("output").innerHTML+=" "+parseInt(day)+"days" ;
+			}
+		</script>
+	</head>
+	<body>	
+		<h1 id="output"></h1>
+		<input type="button" onclick="display()" value="click"/>
+	</body>
+</html>

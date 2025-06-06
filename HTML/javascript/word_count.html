@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>
+			count word
+		</title>
+		<body>
+			<script>
+				function display()
+				{
+					var c=0;
+					var a=document.getElementByName("enter").value;
+					for (i=0;i<a.length;i++)
+					{
+						if (a[i]==" ")
+						{
+							c=c+1;
+							}
+					}
+					document.getElementById("count").value=c;
+				}
+			</script>
+			
+			<input type="text" id="count"/><br/>
+			<textarea rows="10" cols="30" name="enter" onkeyup="display()"></textarea>
+		</body>
+	</head>
+</html>

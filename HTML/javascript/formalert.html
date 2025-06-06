@@ -1,0 +1,29 @@
+<!--Create a web form that have two textbox and a button
+when button is clicked  the value inserted in textbox is added and displayed in alert box.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum calculation</title>
+	<script>
+		function sum()
+		{
+			a = document.getElementById('txta').value;
+			a = parseInt(a);
+			b = document.getElementById('txtb').value;
+			b = parseInt(b);
+			alert(a+b);
+			document.write(a+b);
+			document.getElementByname('txtsum').value = a+b;
+		}
+	</script>
+</head>
+<body>
+	<form action="" method="">
+		
+		<input type="text" name="txta" id="txta"><br>
+		<input type="text" name="txtb" id="txtb" accesskey="u"><br>
+
+		<input type="button" name="btnclick" id="btnclick" value="Find Sum" onclick="sum()"/>
+	</form>
+</body>
+</html>

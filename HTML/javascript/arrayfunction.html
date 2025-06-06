@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>
+			array function
+		</title>
+	</head>
+	<body>	
+		<script>
+			a=[1,2,3,4,5];
+			b=[6,7,8,"ball"];
+			function display()
+			{
+					document.getElementById("output").innerHTML =a;
+			}
+			function one()//concat
+			{
+				c=b.concat(a);
+				document.getElementById("output").innerHTML=c;
+			}
+			function two()//push
+			{
+				a.push("apple");
+				document.getElementById("output").innerHTML=a[a.length-1];
+			}
+			function three()//pop 
+			{
+				document.getElementById("output").innerHTML=a.pop();
+			}
+			function four()//shift
+			{
+				document.getElementById("output").innerHTML=a.shift();
+			}
+			function five()//unshift
+			{
+				a.unshift("lol");
+				document.getElementById("output").innerHTML=a;
+			}
+			function six()//indexOf
+			{
+				document.getElementById("output").innerHTML=a.indexOf(4);
+			}
+			function seven()//sort
+			{
+				document.getElementById("output").innerHTML=a.sort(function(a,b){return b-a});
+			}
+			//tostring
+		</script>
+	
+		<p id="output"></p>
+		<hr/>
+		<button onclick="display()">display</button>
+		<button onclick="one()">concat</button>
+		<button onclick="two()">push</button>
+		<button onclick="three()">pop</button>
+		<button onclick="four()">shift</button>
+		<button onclick="five()">unshift</button>
+		<button onclick="six()">indexof4</button>
+		<button onclick="seven()">sort</button>
+	</body>
+</html>

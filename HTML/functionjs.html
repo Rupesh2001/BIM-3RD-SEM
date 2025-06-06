@@ -1,0 +1,38 @@
+<!--js function-->
+<!--how to access element.?-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jfunction</title>
+	<script>
+		function display() {
+			document.write("Hello");
+		}
+
+		function show() {
+			a = document.getElementById('txtname').value;
+			alert(a);
+			document.getElementById('head').innerHTML=a;
+		}
+
+	</script>
+</head>
+<body> 
+	<h1 id="head">Heading1</h1>
+	<input type="text" name="name" id="txtname">
+	<button name="onclick"  onclick="show()">Click</button>
+
+	<br>
+	<h3>events</h3>
+	<button name="onclick" onclick="display()">onclick</button>
+	<button name="onfocus" onfocus="display()">onfocus</button>
+	<button name="onreset" onreset="display()">onreset</button>
+	<button name="onsubmit" onsubmit="display()">onsubmit</button>
+	<button name="onkeypress" onkeypress="display()">onkeypress</button>
+	<button name="onkeyup" onkeyup="display()">onkeyup</button>
+	<button name="onchange" onchange="display()">onchange</button>
+	<button name="onmouseout" onmouseout="display()">onmouseout</button>
+	<button name="onmouseover" onmouseover="display()">onmouseover</button>
+
+</body>
+</html>

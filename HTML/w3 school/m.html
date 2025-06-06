@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.w3-bar:after{
+	padding:50px;
+	color: red;
+
+}
+
+/* Fake image */
+.fakeimg {
+  background-color:whitesmoke;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Blog Name</h2>
+ 
+  <nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#band" class="w3-button w3-bar-item">Band</a>
+    <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+    <a href="#contact" class="w3-button w3-bar-item">Top headings</a>
+    <a href="#live" class="w3-button w3-bar-item">live game</a>
+    
+  </nav>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px width=900px;"><img src="download.jpg"  alt="logo" ></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px width=900px;"><img src="download.jpg"  alt="logo" ></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px width=900px;"><img src="download.jpg"  alt="logo" ></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+     
+     <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px width=900px;"><img src="download.jpg"  alt="logo" ></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <a href="n.html"><h2> ABOUT FOOTBALL</h2></a>
+      <div class="fakeimg" style="height:200px width:100px;"><img src="download.jpg"  alt="logo"></div>
+      <p>here is some text on football</p>
+    </div>
+    <div class="card">
+     <a href="#"> <h3>Popular Post</h3></a>
+      <div class="fakeimg"><img src="download.jpg" alt="logo"/></div><br/>
+      <div class="fakeimg">my name is rupeshSunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div><br/>
+      <div class="fakeimg"><img src="download.jpg" alt="logo"/></div><br/>
+      <div class="fakeimg">my name is rupesh</div><br/>
+      <div class="fakeimg"><img src="download.jpg" alt="logo"/></div><br/>
+      <div class="fakeimg">my name is rupesh</div>
+      <button class="button" style="background-color:red">Read More</button>
+    </div>
+    <div class="card">
+      <h3>Follow Me on</h3>
+      <p><img src="download1.jpg" height="50%" width="50%"</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+  <p align="left">vvvvvvvvvvvvvvvvvvv</p>
+  <p align="left">Address: dddddddddd</p>
+  <p align="left">Fax number:0333333333333</p>
+  <p align="left">Telephone: 0222222222222</p>
+  <p align="left">football<p>
+      <p align="left">Contact information: <a href="mailto:@gmail.com">
+          rupesh@gmail.com</a>.</p>
+      <p align="left">Posted by:our company</p>
+
+</div>
+
+</body>
+</html>

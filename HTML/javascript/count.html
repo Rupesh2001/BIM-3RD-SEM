@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>
+			javascript
+		</title>
+	</head>
+	<body>
+		<script>
+			function display()
+			{
+				a=document.getElementsByName("inputs")[0].value;//take input from user
+				document.getElementsByName("disp")[0].value=a.length;
+			}
+		</script>
+		<input type="text" name="inputs" placeholder="inputs"/>
+		<input type="text" size="3" name="disp"/>
+		<br/>
+		<input type="button" value="count no of character" name="btn" onmouseover="display()" accesskey="z"/>
+	</body>
+</html>

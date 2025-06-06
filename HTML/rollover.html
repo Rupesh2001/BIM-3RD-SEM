@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mouse over example</title>
+</head>
+<body>
+	<img src="img.png" height="500" id="change" onmouseover="swap()" onmouseout="swapp()">
+	
+	<script>
+		function swap()
+		{
+			 document.getElementById("change").src="first.jpg";
+		}
+		function swapp()
+		 {
+			document.getElementById("change").src="first.png";
+		}
+	</script>
+
+</body>
+</html>

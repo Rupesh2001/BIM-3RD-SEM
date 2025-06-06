@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+</head>
+<script type="text/javascript">
+	function demo()
+	{
+	a=document.getElementsByName('input1')[0].value;
+	b=document.getElementsByName('input2')[0].value;
+	if(a=="admin")
+	{
+		document.getElementById('ss').innerHTML="authorized access";
+	}
+	else
+	{
+	document.getElementById('ss').innerHTML="unauthorized access";
+	}
+	if(b=="nEpal")
+	{
+		document.getElementById('ss').innerHTML="authorized access";
+	}
+	else
+	{
+	document.getElementById('ss').innerHTML="unauthorized access";
+	}
+}
+</script>
+<body>
+	<div>
+	password:<input type="text" name="input1" size="10" /><br/></div>
+	<div>
+	confirm-password2:<input type="text" size="10" name="input2"/><br/></div>
+	<button onmouseover="demo()">check password</button><span id="ss"></span>
+</body>
+</html>

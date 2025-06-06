@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Data_object</title>
+		<script>
+			function display()
+			{
+				b=new Date('march 7,2000');
+				c=new Date();
+				a=c-b;
+				year=a/(86400000*365);
+				a=a-((Math.floor(year))*365*86400000);
+				month=a/(30*86400000);
+				a=a-((Math.floor(month))*30*86400000);
+				days=a/86400000;
+				
+				document.getElementById("output").innerHTML=Math.floor(year)+"year" ;
+				document.getElementById("output").innerHTML+=" "+Math.floor(month)+"month" ;
+				document.getElementById("output").innerHTML+=" "+Math.floor(days)+"days" ;
+			}
+
+		</script>
+	</head>
+	<body>	
+		<h1 id="output"></h1>
+		<input type="button" onclick="display()" value="click"/>
+		
+	</body>
+</html>

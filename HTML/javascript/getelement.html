@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>
+			javascript getelement
+		</title>
+	</head>
+	<body>
+		<script>
+			function display()
+			{	
+				document.getElementById("ass").innerHTML="onmouseover";
+			}
+			function hello()
+			{	
+				document.getElementById("aaa").innerHTML="onmouseout";
+			}
+		</script>
+		<b id="ass"></b>
+		<b id="aaa"></b>
+		<button onmouseout="display()">onmouseout</button>
+		<button onmouseover="hello()">onmouseover</button>
+	</body>
+</html>

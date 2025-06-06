@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>
+			strin method
+		</title>
+	</head>
+	<body>
+	<script>
+		a="Naruto uzumaki Sasuke uchiha";
+		function display()
+		{
+			document.getElementById("output").innerHTML=a;
+		}
+		function one()//substr
+		{
+			document.getElementById("output").innerHTML=a.substr(7,17)
+		}
+		function two()//substring
+		{
+			document.getElementById("output").innerHTML=a.substring(15,21);
+		}
+		function three()//replace
+		{
+			document.getElementById("output").innerHTML=a.replace("Naruto","Sasuke");;
+		}
+		function four()//search
+		{
+			document.getElementById("output").innerHTML=a.search("uchiha");
+		}
+		function five()//toUpperCase
+		{
+			document.getElementById("output").innerHTML=a.toUpperCase();
+		}
+		function six()//toLower
+		{
+			a=a.toLowerCase();
+			document.getElementById("output").innerHTML=a;
+		}
+		function seven()//indexOf
+		{
+			document.getElementById("output").innerHTML=a.indexOf("a");
+		}
+		function eight()//charAt
+		{
+			document.getElementById("output").innerHTML=a.charAt(15);
+		}
+		function nine()//split
+		{	
+			c=a.split("",6);
+			document.getElementById("output").innerHTML=c;
+		}
+		function ten()//fontcolor
+		{
+			document.getElementById("output").innerHTML=a.fontcolor("blue");
+		}
+		function eleven()//fontsize
+		{
+			document.getElementById("output").innerHTML=a.fontsize(20);
+		}
+		function twelve()//bold
+		{
+			document.getElementById("output").innerHTML=a.bold();
+		}
+		function threeteen()//sup
+		{
+			document.getElementById("output").innerHTML=a.sup();
+		}
+		function fourteen()//sub
+		{
+			document.getElementById("output").innerHTML=a.sub();
+		}
+		function fifteen()//parseint
+		{
+			b="22";
+			document.getElementById("output").innerHTML=b.parseInt();
+		}
+		function sixteen()//lastIndexOf
+		{
+			document.getElementById("output").innerHTML=a.lastIndexOf('a');
+		}
+		function si()//lastIndexOf
+		{
+			document.getElementById("output")[0].value=a.lenght;
+		}
+	</script>
+	<h2>Naruto uzumaki Sasuke uchiha</h2>
+	<p id="output"></p>
+	<hr/>
+	<button onclick="display()">display</button>
+	<button onclick="one()">substr</button>
+	<button onclick="two()">substring</button>
+	<button onclick="three()">replace_Naruto</button>
+	<button onclick="four()">search_a</button>
+	<button onclick="five()">uppercase</button>
+	<button onclick="six()">alllowercase</button>
+	<button onclick="seven()">indexOf_a</button><!--gives fist index of a-->
+	<button onclick="eight()">charAt_15</button>
+	<button onclick="nine()">split</button>
+	<button onclick="ten()">fontcolor</button>
+	<button onclick="eleven()">fontsize</button>
+	<button onclick="twelve()">bold</button>
+	<button onclick="threeteen()">sup</button>
+	<button onclick="fourteen()">sub</button>
+	<button onclick="fifteen()">parseint</button>
+	<button onclick="si()">lastindexof_a</button>
+	</body>
+</html>

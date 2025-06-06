@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Method</title>
+	<script>
+		function convert(){
+			a=document.getElementById('value').value;
+			str = a.toUpperCase();
+			document.getElementById('display').innerHTML = str;
+			
+		}
+	</script>
+</head>
+<body>
+	<input type="txt" name="txtname" id="value">
+	<input type="button" name="btnclick" value="toUpperCase" onclick='convert()'/>
+	<p id="display"></p>

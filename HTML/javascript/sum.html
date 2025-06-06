@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sum()
+		{
+			a=document.getElementById('txta').value;
+			a=parsefloat(a);
+			b=document.getElementById('txtb').value;
+			b=parsefloat(b);
+			document.getElementById('txtsum').value=a+b;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" name="n" id="txta"/><br/>
+		<input type="text" name="name" id="txtb"/><br/>
+		<input type="text" id="txtsum"/><br/>
+		<input type="button" onclick="sum()"/>
+	</form>
+
+</body>
+</html>

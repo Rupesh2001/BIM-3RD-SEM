@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>
+			your_info javascript
+		</title>
+	</head>
+	<body>
+		<script>
+			function display()
+			{
+				document.getElementById("output").value="";
+				b=document.getElementById("input").value;
+				a=b.toLowerCase();
+				for (i=0;i<a.length;i++)
+				{
+					if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+					{
+						document.getElementById("output").value+=a[i];
+					}
+				}
+			}
+			
+			function number(x)
+			{
+				a=x.value;
+				if (isNaN(a))
+					x.nextSibling.innerHTML="insert only number";
+				else
+					x.nextSibling.innerHTML="";
+			}
+			
+			function mobile_no(a)
+			{
+				if (isNaN(a.value)||a.value.length!=10||a.value[0]!="9")
+					a.nextSibling.innerHTML="insert mobile no";
+				else	
+					a.nextSibling.innerHTML="";
+			}
+			function email_address(a)
+			{
+				b=a.value;
+				x=b.indexOf('@');
+				y=b.indexOf('.');
+				c="invlaid";
+				if (b.length<5||b.indexOf('@')==-1||(b.indexOf('@'))!=(b.lastIndexOf('@'))||b.indexOf('.')==-1||(y-x)<3)
+				{
+					a.nextSibling.innerHTML=c.fontcolor("red");
+				}
+				else 
+				{
+					a.nextSibling.innerHTML="";
+				}
+			}
+		</script>
+		
+		<input type="text" id="input" onkeyup="display()" placeholder="enter a text"/><br/>
+		<input type="text" id="output"/>vowels only <span></span>
+		<hr/>
+		number only:
+		<input type="text" placeholder="enter a number" id="num" onchange="number(this)"/><span></span>
+		<hr/>
+		mobile no only:
+		<input type="text" onchange="mobile_no(this)" placeholder="insert mobile no"/><span></span>
+		<hr/>
+		email address:
+		<input type="text" onblur="email_address(this)"/><span></span>
+		<hr/>
+	</body>
+</html>

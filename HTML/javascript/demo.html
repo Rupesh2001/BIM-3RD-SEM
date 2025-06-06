@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			header
+		</title>
+		<style>
+			body{
+				margin: 0px;
+			}
+			.header{
+				background-color: aquamarine;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+			.icon{
+				display: none;
+			}
+			.icon>button{
+				border-style:none;
+				background-color: aquamarine;
+				font-size: 2em;
+				cursor: pointer;
+			}
+			.nav{
+				display:none;
+				height:100vh;
+				position:absolute;
+				background-color:aquamarine;
+			}
+			.nav>ol{
+				margin:0px;
+				padding:0px;
+				list-style-type: none;
+			}
+			.nav>ol>li{
+				margin:5px;
+				background-color: antiquewhite;
+				padding:10px 50px;
+			}
+			.nav>ol>li:hover{
+				background-color: azure;
+			}
+			.logo>h1{
+				margin:0px 10px;
+				padding: 0px;
+			}
+			.navigation>ol{
+				display: flex;
+				list-style-type: none;
+				margin-right: 10px;
+			}
+			.navigation>ol>li{
+				padding:0px 10px;
+				font-size: 20px;
+			}
+			@media (max-width: 800px){
+				.navigation{
+					display:none;
+				}
+				.icon{
+					display:block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="icon" onclick="display()">
+				<button>&#9776;</button>
+				<div class="nav" id="nav">
+					<ol>
+						<li>Home</li>
+						<li>Home</li>
+						<li>Home</li>
+					</ol>
+				</div>
+			</div>
+			<div class="logo">
+				<h1>myvalley</h1>
+			</div>
+			<div class="navigation" >
+				<ol>
+					<li>Home</li>
+					<li>Home</li>
+					<li>Home</li>
+				</ol>
+			</div>
+		</div>
+		<script>
+			function display(){
+				let a=document.getElementById('nav').style.display;
+				if (a!='none'){
+					document.getElementById('nav').style.display="none";
+				}
+				else
+					document.getElementById('nav').style.display="block";
+			}
+		</script>
+	</body>
+</html>

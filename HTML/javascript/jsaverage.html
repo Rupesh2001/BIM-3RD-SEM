@@ -1,0 +1,31 @@
+<!--create a web form that havr 4 textbox and a button when a button is clicked the average of 4 numbers is displayed in first textbox-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Average</title>
+	<script type="text/javascript">
+		function average() {
+			a = document.getElementById('txta').value;
+			a = parseInt(a);
+			b = document.getElementById('txtb').value;
+			b = parseInt(b);
+			c=	document.getElementById('txta').value;
+			c=	parseInt(c);
+			d=	document.getElementById('txtd').value;
+			d=	parseInt(d);
+			
+			document.getElementById('txtsum').value = (a+b+c+d)/4;
+		}
+	</script>
+</head>
+<body>
+	<form action="" method="">
+		<input type="text" name="txtsum" id="txtsum" readonly="readonly" value="average will be displayed"><br>
+		<input type="text" name="txta" id="txta"><br/>
+		<input type="text" name="txtb" id="txtb"><br/>
+		<input type="text" name="txtc" id="txtc"><br/>
+		<input type="text" name="txtd" id="txtd"><br/>
+		<input type="button" name="btnclick" id="btnclick" value="Find average" onclick="average()">
+	</form>
+</body>
+</html>

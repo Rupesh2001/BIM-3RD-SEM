@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			calculator 1
+		</title>
+	</head>
+	<body>
+		<script>
+			function display(a)
+			{	
+					
+						document.getElementById("enter").value+=a;
+			}
+			function equal()
+			{
+				a=document.getElementById("enter").value;
+				document.getElementById("enter").value=eval(a);
+			}
+			function clear()
+			{
+				document.getElementById("enter").value="";
+			}
+		</script>
+		<input type="text" id="enter"/><br/>
+		<button onclick="clear()">ce</button>
+		<button value="1" onclick="display(1)">1</button>
+		<button value="2" onclick="display(2)" >2</button>
+		<button value="3" onclick="display(3)">3</button>
+		<button value="4" onclick="display(4)">4</button>
+		<button value="5" onclick="display(5)">5</button>
+		<button value="6" onclick="display(6)">6</button><br/>
+		<button value="7" onclick="display(7)">7</button>
+		<button value="8" onclick="display(8)">8</button>
+		<button value="9" onclick="display(9)">9</button>
+		<button value="0" onclick="display(0)">0</button><br/>
+		<button onclick="display('+')";>+</button>
+		<button onclick="display('-')">-</button>
+		<button onclick="display('*')">*</button>
+		<button onclick="display('/')">/</button>
+		<button onclick="equal()">=</button><br/>
+	</body>
+</html>

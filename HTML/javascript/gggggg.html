@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string</title>
+<script>
+	function convert()
+	{
+		a=document.getElementById('value').value;
+		str=a.split("");
+		document.getElementById('dis').innerHTML=str;
+	}
+</script>
+</head>
+<body>
+	<input type="text" name="txtvalue" id="value"/>
+    <input type="button" name="button" value="uppercase" onclick="convert()" />	
+    <p id="dis"></p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check</title>
+<script>
+	function check()
+	{
+		control=document.getElementById('txt');
+		a=control.value;
+		if(!isNaN(a))
+		control.nextSibling.innerHTML="Numbers are not allowed";
+	else
+		control.nextSibling.innerHTML="";
+	}
+</script>
+</head>
+<body>
+	<input type="text" name="txtvalue" id="txt"><span></span><br/>
+    <input type="button" name="button" value="click it" onclick="check()"/>	
+</body>
+</html>

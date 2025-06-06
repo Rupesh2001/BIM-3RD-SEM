@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+			gmail
+		</title>
+	</head>
+	<body>
+		<script>
+			function display(a)
+			{
+				b=a.value;
+				x=b.indexOf('@');
+				y=b.indexOf('.');
+				if ((b.indexOf('@')==-1)||(b.indexOf('.')==-1))
+				{
+					a.nextSibling.innerHTML="invalid";
+					
+				}
+				else 
+				{
+					a.nextSibling.innerHTML="your email is corect";
+					
+				}
+			}
+		</script>
+		
+		<input type="text" onblur="display(this)"/><span></span>
+		
+	</body>
+</html>

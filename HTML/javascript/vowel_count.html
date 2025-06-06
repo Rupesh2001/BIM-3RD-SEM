@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+			count no of vowels
+		</title>
+	</head>
+	<body>
+	
+		<script>
+			function display()
+			{
+				var a=document.getElementById("enter").value;
+				var c=0;
+				for(i=0;i<a.length;i++)
+				{
+					if (a[i]=="a"||a[i]=="e"||a[i]=="i"||a[i]=="o"||a[i]=="u")
+					{
+						c=c+1;
+					}
+				}
+				
+				document.getElementById("count").value=c;
+			}
+		</script>
+		
+		<input type="text" id="count"/><br/>
+		<textarea rows="8" cols="30" id="enter" onkeyup="display()"></textarea>
+		<button onclick="display()">click</button>
+	</body>
+</html>
